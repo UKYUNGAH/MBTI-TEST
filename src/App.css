@@ -14,17 +14,12 @@
 .wrap {
 }
 .container {
-    position: relative;
-    max-width: 600px;
-    margin: 0 auto;
-    max-height: 600px;
-    padding: 40px 0;
-    text-align: center;
-    height: 100%;
-    /* position: absolute;
+    max-width: 550px;
+    width: 100%;
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
 }
 
 .main {
@@ -69,9 +64,6 @@
     text-shadow: 2px 2px 1px #333;
 }
 .main button {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
     width: 100%;
     padding: 20px 0;
     font-size: 20px;
@@ -87,6 +79,8 @@
 }
 
 .question {
+    text-align: center;
+    width: 100%;
     margin-bottom: 40px;
 }
 .question .top {
@@ -113,7 +107,7 @@
 .question .select_box {
 }
 .question .select_box button {
-    width: 70%;
+    width: 88%;
     padding: 30px 10px;
     font-size: 16px;
     white-space: pre-line;
@@ -130,6 +124,11 @@
 }
 
 .result {
+    width: 100%;
+    height: 100vh;
+    padding: 40px 0 0;
+    margin-bottom: 40px;
+    text-align: center;
 }
 .result .title {
 }
@@ -199,11 +198,20 @@
     .main .box {
         margin-bottom: 80px;
     }
+    .main button {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
     .question h2 {
         font-size: 18px;
     }
     .question .select_box button {
         width: 98%;
+    }
+    .result {
+        padding: 0;
+        margin-bottom: 0;
     }
     .result .text_box {
         width: 94%;
