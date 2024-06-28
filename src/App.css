@@ -9,6 +9,7 @@
     --y-color: #f7e61a;
     --b-color: #5dc8f2;
     --p-color: #e60a78;
+    --hover-color: #d60970;
 }
 .wrap {
 }
@@ -67,10 +68,15 @@
     padding: 20px 0;
     font-size: 20px;
     font-weight: 500;
-    background: #e60a78;
-    border: 1px solid #e60a78;
+    background: var(--p-color);
+    border: 1px solid var(--p-color);
     border-radius: 30px;
     color: #fff;
+}
+.main button:hover {
+    background: var(--hover-color);
+    /* transform: translateY(-15px); */
+    /* transition: all ease-in 0.1s; */
 }
 
 .question {
@@ -82,25 +88,38 @@
 }
 .question .top p {
     font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 100px;
+    font-weight: 400;
+    margin-bottom: 30px;
     color: #e60a78;
+    text-shadow: 2px 2px 0px #333;
 }
 .question h2 {
+    font-size: 24px;
     font-weight: 400;
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 50px;
+    color: #bebebe;
+    /* text-align: left; */
+    text-shadow: 1px 1px 0px #000;
+    margin-bottom: 100px;
+    display: inline-block;
+    white-space: pre-wrap;
 }
 .question .select_box {
 }
 .question .select_box button {
-    width: 350px;
-    padding: 30px 0;
+    width: 70%;
+    padding: 30px 10px;
+    font-size: 16px;
+    white-space: pre-line;
     margin-bottom: 20px;
     background: var(--p-color);
     border-radius: 30px;
     color: var(--w-color);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+.question .select_box button:hover {
+    background: var(--hover-color);
+    transform: translateY(-5px);
+    transition: all ease-in 0.1s;
 }
 
 .result {
@@ -116,22 +135,37 @@
     font-size: 30px;
     font-weight: 500;
     color: var(--b-color);
+    text-shadow: 1px 1px 0px #333;
 }
 
 .result img {
     width: 250px;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
 }
 .result .text_box {
     width: 100%;
+    background: var(--p-color);
+    border: 1px solid var(--p-color);
+    margin-bottom: 50px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 0px #333;
 }
 .result .text_box p {
     width: 75%;
     text-align: center;
     display: inline-block;
     white-space: pre-wrap;
-    color: #333;
-    margin-bottom: 50px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 30px 0;
 }
 .result button {
+    color: var(--y-color);
+    font-size: 20px;
+    text-shadow: 1px 1px 0px #333;
+}
+.result button:hover {
+    transform: translateY(-5px);
+    transition: all ease-in 0.1s;
 }

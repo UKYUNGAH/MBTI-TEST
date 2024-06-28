@@ -1,14 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Home = () => {
     let navigate = useNavigate();
+
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+        AOS.refresh();
+    }, []);
+
     return (
         <div className="main">
             <div className="container">
-                <div className="title">
+                <div className="title" data-aos="zoom-in" data-aos-delay="100">
                     <img src="/logo.png" alt="" />
                 </div>
-                <div className="box">
+                <div className="box" data-aos="fade-up" data-aos-delay="200">
                     <img src="/entp.png" alt="" />
                     <h2>
                         <span className="y">나와 닮은</span>
@@ -22,6 +31,7 @@ const Home = () => {
                     onClick={() => {
                         navigate('/test');
                     }}
+                    data-aos="zoom-in"
                 >
                     테스트 시작하기
                 </button>
