@@ -75,8 +75,8 @@
 }
 .main button:hover {
     background: var(--hover-color);
-    /* transform: translateY(-15px); */
-    /* transition: all ease-in 0.1s; */
+    /* transform: translateY(-5px); */
+    transition: all ease-in 0.1s;
 }
 
 .question {
@@ -96,9 +96,8 @@
 .question h2 {
     font-size: 24px;
     font-weight: 400;
-    color: #bebebe;
-    /* text-align: left; */
-    text-shadow: 1px 1px 0px #000;
+    color: #323030;
+
     margin-bottom: 100px;
     display: inline-block;
     white-space: pre-wrap;
@@ -168,4 +167,34 @@
 .result button:hover {
     transform: translateY(-5px);
     transition: all ease-in 0.1s;
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 360px;
+    }
+    .main .title img {
+        width: 320px;
+        margin-bottom: 20px;
+    }
+    .main .box h2 {
+        font-size: 28px;
+    }
+    .main .box {
+        margin-bottom: 80px;
+    }
+    .question h2 {
+        font-size: 18px;
+    }
+    .question .select_box button {
+        width: 98%;
+    }
+    .result .text_box {
+        width: 94%;
+        margin: 0 auto 50px;
+    }
+    .result img {
+        width: 180px;
+        margin-bottom: 20px;
+    }
 }

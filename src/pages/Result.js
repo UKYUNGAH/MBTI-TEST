@@ -8,7 +8,10 @@ const Result = () => {
     const params = new URLSearchParams(location.search);
     const mbti = params.get('mbti');
 
-    const result = mbtiResult.find((result) => result.type === mbti);
+    console.log('mbti:', mbti);
+    const result = mbtiResult.find((result) => result.type.toUpperCase() === mbti.toUpperCase().trim());
+
+    // const result = mbtiResult.find((result) => result.type === mbti);
 
     return (
         <div className="container">

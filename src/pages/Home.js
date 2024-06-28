@@ -31,7 +31,6 @@ const Home = () => {
                     onClick={() => {
                         navigate('/test');
                     }}
-                    data-aos="zoom-in"
                 >
                     테스트 시작하기
                 </button>
