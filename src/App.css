@@ -14,14 +14,16 @@
 .wrap {
 }
 .container {
-    width: 600px;
-    height: 100vh;
+    max-width: 600px;
+    margin: 0 auto;
+    max-height: 600px;
     padding: 40px 0;
     text-align: center;
-    position: absolute;
+    height: 100%;
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
 }
 
 .main {
@@ -66,7 +68,11 @@
     text-shadow: 2px 2px 1px #333;
 }
 .main button {
-    width: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    width: 80%;
     padding: 20px 0;
     font-size: 20px;
     font-weight: 500;
@@ -82,6 +88,7 @@
 }
 
 .question {
+    margin-bottom: 40px;
 }
 .question .top {
 }
@@ -165,6 +172,7 @@
     color: var(--y-color);
     font-size: 20px;
     text-shadow: 1px 1px 0px #333;
+    margin-bottom: 20px;
 }
 .result button:hover {
     transform: translateY(-5px);
@@ -173,7 +181,13 @@
 
 @media (max-width: 400px) {
     .container {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
         width: 360px;
+        margin: 0 auto;
+        padding: 60px 0;
     }
     .main .title img {
         width: 320px;
