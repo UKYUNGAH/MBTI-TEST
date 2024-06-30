@@ -26,13 +26,15 @@ const Result = () => {
                         <p>{result.description}</p>
                     </div>
 
-                    <button
-                        onClick={() => {
-                            navigate('/');
-                        }}
-                    >
-                        테스트 다시하기
-                    </button>
+                    <div className="back_box">
+                        <button
+                            onClick={() => {
+                                navigate('/');
+                            }}
+                        >
+                            테스트 다시하기
+                        </button>
+                    </div>
                 </div>
             ) : (
                 <h1>결과를 찾을수 업습니다</h1>

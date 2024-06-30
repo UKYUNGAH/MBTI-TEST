@@ -188,6 +188,7 @@
     width: 100%;
     border-top: 1px solid var(--border-color);
     padding-top: 24px;
+    margin-bottom: 80px;
 }
 .result .text_box p {
     font-size: 14px;
@@ -198,10 +199,11 @@
     white-space: pre-line;
 }
 
+.result .back_box {
+    width: 100%;
+    text-align: end;
+}
 .result button {
-    position: absolute;
-    bottom: 50px;
-    right: 44px;
     font-size: 14px;
     color: var(--r-color);
     text-decoration: underline;
