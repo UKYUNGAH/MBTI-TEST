@@ -54,7 +54,7 @@ const Test = () => {
 
     return (
         <div className="test">
-            <div className="container">
+            <div className="container bg test_color ">
                 {qIndex < questions.length ? (
                     <Question
                         question={questions[qIndex].question}

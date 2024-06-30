@@ -14,12 +14,12 @@ const Result = () => {
     // const result = mbtiResult.find((result) => result.type === mbti);
 
     return (
-        <div className="container">
+        <div className="result">
             {result ? (
-                <div className="result">
+                <div className="container bg result_color">
                     <div className="title">
-                        <span>나와 비슷한 등장인물은?</span>
-                        <h2>{result.title}!</h2>
+                        <h2>{result.title}</h2>
+                        <span>{result.subTitle}</span>
                     </div>
                     <img src={result.imageUrl} alt="" />
                     <div className="text_box">
@@ -31,7 +31,7 @@ const Result = () => {
                             navigate('/');
                         }}
                     >
-                        처음으로 돌아가기
+                        테스트 다시하기
                     </button>
                 </div>
             ) : (

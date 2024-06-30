@@ -12,20 +12,20 @@ const Home = () => {
     }, []);
 
     return (
-        <div className="main">
-            <div className="container">
-                <div className="title" data-aos="zoom-in" data-aos-delay="100">
-                    <img src="/logo.png" alt="" />
-                </div>
-                <div className="box" data-aos="fade-up" data-aos-delay="200">
-                    <img src="/entp.png" alt="" />
-                    <h2>
-                        <span className="y">나와 닮은</span>
-                        <br /> <span className="p">짱구 등장인물</span> <span className="b">찾기!</span>
-                    </h2>
-
-                    {/* <h2>테스트에 오신 것을 환영합니다! 자신을 더 깊이 이해하는 기회, 당신의 유형을 찾아보세요</h2> */}
-                </div>
+        <main className="main">
+            <div className="container bg main_color">
+                <header className="title" data-aos="zoom-in" data-aos-delay="100">
+                    <h1>짱구는못말려</h1>
+                    <h2>나와 같은 등장인물은?</h2>
+                </header>
+                <section className="box" data-aos="fade-up" data-aos-delay="200">
+                    <div className="main_img">
+                        <img src="/main.png" alt="메인 이미지" />
+                    </div>
+                    <div className="inner">
+                        <h3>지금 바로 테스트 해보기</h3>
+                    </div>
+                </section>
                 <button
                     type="button"
                     onClick={() => {
@@ -35,7 +35,7 @@ const Home = () => {
                     테스트 시작하기
                 </button>
             </div>
-        </div>
+        </main>
     );
 };
 
