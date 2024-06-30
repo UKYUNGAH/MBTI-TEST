@@ -33,6 +33,7 @@ const Home = () => {
                     }}
                     data-aos="zoom-in"
                     data-aos-delay="200"
+                    data-aos-offset="0"
                 >
                     테스트 시작하기
                 </button>
